@@ -2,32 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-primary);
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .h1 {
+    @apply font-medium text-[50px] leading-[62.6px];
+  }
+
+  .h2 {
+    @apply font-medium text-[38px] leading-[47.5px];
+  }
+
+  .h3 {
+    @apply font-bold text-[22px] leading-[33px];
+  }
+
+  .h4 {
+    @apply font-bold text-[20px] leading-[32.5px];
+  }
+
+  .h5 {
+    @apply font-bold text-[18px] leading-[27px];
+  }
+
+  .h6 {
+    @apply font-bold text-[16px] leading-[20px] font-secondary;
+  }
+
+  .small {
+    @apply font-normal text-[14px] leading-[19.25px];
+  }
+
+  .btn-highlight {
+    @apply px-[32px] py-[12px] rounded-3xl transition-colors duration-300 uppercase bg-transparent text-yellow border-2 border-yellow hover:bg-yellow hover:text-white;
+  }
+
+  .btn-highlight__filled {
+    @apply px-[32px] py-[12px] rounded-3xl transition-colors duration-300 uppercase bg-yellow text-white hover:bg-lightBrown;
+  }
+
+  .btn-white {
+    @apply px-[32px] py-[12px] rounded-3xl transition-colors duration-300 uppercase  bg-transparent text-white border-2 border-white hover:bg-white hover:text-brown;
+  }
+
+  .btn-white__filled {
+    @apply px-[32px] py-[12px] rounded-3xl uppercase bg-white text-brown;
+  }
+
+  .disabled {
+    @apply px-[32px] py-[12px] rounded-3xl uppercase bg-yellow text-white opacity-50 cursor-not-allowed hover:bg-lightBrown transition-colors duration-300;
   }
 }

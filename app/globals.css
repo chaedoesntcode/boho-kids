@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* START: General styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +10,15 @@
 }
 
 body {
-  font-family: var(--font-primary);
+  font-family: var(--font-primary), sans-serif;
 }
 
 p {
     font-size: 16px;
     font-weight: 400;
 }
+/* END: General styles */
+
 
 @layer utilities {
   .h1 {
@@ -64,5 +67,9 @@ p {
 
   .disabled {
     @apply px-[32px] py-[12px] rounded-3xl uppercase bg-yellow text-white opacity-50 cursor-not-allowed hover:bg-lightBrown transition-colors duration-300;
+  }
+
+  .nav-icon {
+    @apply text-[22px] cursor-pointer hover:opacity-70 transition-opacity duration-300;
   }
 }

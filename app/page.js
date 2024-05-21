@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Carousel from "./components/Carousel";
 import Benefits from "./components/Benefits";
 import { decorCarousel, furnitureCarousel } from "@/lib/data";
+import SocialMediaFeed from "./components/SocialMediaFeed";
 import Footer from "./components/Footer";
 
 
@@ -14,8 +15,9 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Carousel id={"decor"} title={'Shop Decor'} subtitle={'Let your creativity soar with us.'} items={decorCarousel}/>
-      <Benefits />
       <Carousel id={"furniture"} title={'Shop Furniture'} subtitle={'Perfect pieces for playtime and rest.'} items={furnitureCarousel}/>
+      <Benefits />
+      <SocialMediaFeed />
       <Footer />
     </main>
   );

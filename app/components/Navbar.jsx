@@ -31,16 +31,6 @@ const Navbar = () => {
       <BiUser className="nav-icon" />
       <BiCart className="nav-icon" />
     </div>
-        {/* <div className="flex gap-x-2 md:gap-x-3 items-center">
-          <form action="" className="bg-orange-300 flex flex-grow">
-            <div className="flex flex-grow items-center max-w-[600px]">
-              <input type="search" placeholder="search" className="p-2 rounded-md border border-gray-300 outline-yellow" />
-              < BiSearch className="nav-icon" />
-            </div>
-          </form>
-          <BiUser className="nav-icon" />
-          <BiCart className="nav-icon" />
-        </div> */}
       </div>
       <nav className="bg-lightGray flex justify-center py-2">
         <Navlinks />

@@ -15,6 +15,8 @@ export default function Home() {
       <Carousel id={"decor"} title={'Shop Decor'} subtitle={'Let your creativity soar with us.'} items={decorCarousel}/>
       <Benefits />
       <Carousel id={"furniture"} title={'Shop Furniture'} subtitle={'Perfect pieces for playtime and rest.'} items={furnitureCarousel}/>
+      
+      {/* footer */}
     </main>
   );
 }

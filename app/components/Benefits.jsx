@@ -5,8 +5,8 @@ import { BiLeaf, BiChat, BiCheckCircle } from "react-icons/bi";
 const Benefits = () => {
   return (
     // START: Benefits //
-    <section className="py-10 bg-lightGray">
-      <div className="grid grid-cols-2 px-5 md:grid-cols-4 md:gap-2">
+    <section className="py-10 bg-lightGray w-full ">
+      <div className="w-full lg:w-2/3 mx-auto grid grid-cols-2 md:grid-cols-4">
         <div className="benefits-grid-item">
           <BiLeaf className="text-4xl mb-3" />
           <p>Sustainable Materials</p>

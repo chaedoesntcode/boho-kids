@@ -27,7 +27,7 @@ const Carousel = ({ id, title, subtitle, items }) => {
 
   return (
     // START: Carousel //
-    <section id={id} className="container px-2 py-4 md:p-10">
+    <section id={id} className="container px-2 py-10 md:py-4 md:p-10">
       <div className="relative w-full flex flex-col align-center justify-center">
         <div className="mb-5">
           <h2 className="h2">{title}</h2>
@@ -37,7 +37,7 @@ const Carousel = ({ id, title, subtitle, items }) => {
         <div className="ml-2 gap-2 product-container mb-4 overflow-hidden">
           {displayed.map((item, index) => {
             return (
-              <div className="product-card"  key={`${id}-${index}`}>
+              <div className="product-card hover:cursor-pointer"  key={`${id}-${index}`}>
                 <div className="w-full h-[300px] bg-white rounded-[12px] overflow-hidden relative">
                   <Image
                     src={item.imgURL}
@@ -50,7 +50,7 @@ const Carousel = ({ id, title, subtitle, items }) => {
                 </div>
                 <h3 className="h3 mt-2">{item.brandName}</h3>
                 <div className="flex items-center gap-2">
-                  <p className="text-xl font-medium text-green-800">
+                  <p className="text-xl font-semibold text-green-800">
                     {item.salePrice}
                   </p>
                   <p className="small text-black/80 line-through">

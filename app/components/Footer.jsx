@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer id="contact" className="bg-darkGray py-10 bg-lightGray w-full">
-      <div className="px-20 py-5 md:py-10 flex flex-col lg:flex-row gap-y-10 md:gap-y-5 lg:gap-x-5">
+      <div className="px-10 md:px-20 py-5 md:py-10 flex flex-col lg:flex-row gap-y-10 md:gap-y-5 lg:gap-x-5">
         <div className="w-full lg:w-1/3 order-3 lg:order-1">
           <p className="h4">Shop <span className="text-brown">Boho Kids</span></p>
           <p className="small w-full md:w-1/2">
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="px-20 lg:px-0 py-5 lg:text-center">
+      <div className="px-10 lg:px-0 py-5 lg:text-center">
         <p className="small">&copy; {new Date().getFullYear()} Boho Kids. All rights reserved. <Link target="_blank" href='https://www.google.com' className="underline">Terms & Conditions</Link>&nbsp;|&nbsp;
         <Link target="_blank" href='https://www.google.com' className="underline">Privacy Policy</Link></p>
       </div>

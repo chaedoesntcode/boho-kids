@@ -20,9 +20,11 @@ const Navbar = () => {
       <div className="flex gap-x-2 md:gap-x-3 items-center">
       <form action="" className="flex flex-grow max-w-[600px] rounded-md overflow-hidden">
         <input
+          id="search"
+          name="search"
           type="search"
           placeholder="Search"
-          className="p-2 flex-grow border border-gray-300 outline-yellow rounded-l-md"
+          className="p-2 flex-grow border bg-white border-gray-300 outline-yellow rounded-l-md"
         />
         <button type="submit" className="p-2 bg-lightGray border-gray-300">
           <BiSearch className="nav-icon" />

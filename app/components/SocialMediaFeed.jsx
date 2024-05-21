@@ -18,20 +18,20 @@ const SocialMediaFeed = () => {
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-4 mx-auto'>
             <div className='hover:cursor-pointer'>
-                <Image src={Media1} placeholder="blur" width={400} height={400} alt='Woman and child playing outdors' className='rounded-md media-img'/>
-                <p className='text-sm text-black/70 flex gap-1 items-center'><FaHeart className='ml-1'/>31K</p>
+                <Image src={Media1} placeholder="blur" width={400} height={400} alt='Woman and child playing outdors' className='rounded-xl media-img'/>
+                <p className='text-black/70 flex gap-1 items-center'><FaHeart className='ml-1 text-yellow'/>31K</p>
             </div>
             <div className='hover:cursor-pointer'>
-                <Image src={Media2} placeholder="blur" width={400} height={400} alt='Closeup of an instrument leaning against a wall' className='rounded-md media-img'/>
-                <p className='text-sm text-black/70 flex gap-1 items-center'><FaHeart className='ml-1'/>45K</p>
+                <Image src={Media2} placeholder="blur" width={400} height={400} alt='Closeup of an instrument leaning against a wall' className='rounded-xl media-img'/>
+                <p className='text-black/70 flex gap-1 items-center'><FaHeart className='ml-1 text-yellow'/>45K</p>
             </div>
             <div className='hover:cursor-pointer'>
-                <Image src={Media3} placeholder="blur" width={400} height={400} alt='Two boys having a pillow fight, with pillows in mid-air' className='rounded-md media-img'/>
-                <p className='text-sm text-black/70 flex gap-1 items-center'><FaHeart className='ml-1'/>23K</p>
+                <Image src={Media3} placeholder="blur" width={400} height={400} alt='Two boys having a pillow fight, with pillows in mid-air' className='rounded-xl media-img'/>
+                <p className='text-black/70 flex gap-1 items-center'><FaHeart className='ml-1 text-yellow text-yellow'/>23K</p>
             </div>
             <div className='hover:cursor-pointer'>
-                <Image src={Media4} placeholder="blur" width={400} height={400} alt='Desk workspace featuring wall art, plants, and a computer' className='rounded-md media-img'/>
-                <p className='text-sm text-black/70 flex gap-1 items-center'><FaHeart className='ml-1'/>75K</p>
+                <Image src={Media4} placeholder="blur" width={400} height={400} alt='Desk workspace featuring wall art, plants, and a computer' className='rounded-xl media-img'/>
+                <p className='text-black/70 flex gap-1 items-center'><FaHeart className='ml-1 text-yellow'/>75K</p>
             </div>
         </div>
     </section>

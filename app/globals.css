@@ -19,6 +19,7 @@ p {
 }
 /* END: General styles */
 
+/* START: Hero styles */
 .hero-container {
   position: relative;
   height: 60vh; 
@@ -40,6 +41,30 @@ p {
   position: relative;
   color: white;
 }
+/* END: Hero styles */
+
+/* START: Carousel styles */
+.product-container {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  gap: 1rem;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 350px;
+  height: 400px;
+  border-radius: 15px;
+}
+/* END: Carousel styles */
+
 
 @layer utilities {
   .h1 {

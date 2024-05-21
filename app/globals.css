@@ -45,9 +45,11 @@ p {
 
 /* START: Carousel styles */
 .product-container {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
-  overflow-x: auto;
+  align-items: center;
+  overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
   gap: 1rem;
@@ -62,6 +64,11 @@ p {
   width: 350px;
   height: 400px;
   border-radius: 15px;
+}
+
+.slider-img {
+  object-fit: cover;
+  object-position: center;
 }
 /* END: Carousel styles */
 

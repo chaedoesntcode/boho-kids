@@ -31,8 +31,7 @@ const CountdownTimer = () => {
       if(hoursEl && hoursUnitEl) {
         hoursEl.innerText = hoursRemaining;
         hoursUnitEl.innerText = hoursRemaining === 1 ? 'hour' : 'hours';
-      }
-
+      } 
 
       const minutesEl = document.querySelector('.minutes');
       const minutesUnitEl = document.querySelector('.minutes-unit');

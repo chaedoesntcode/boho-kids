@@ -28,14 +28,17 @@ const Footer = () => {
             inbox.
           </p>
           <div className="mt-3">
-            <form className="flex flex-col md:flex-row md:gap-2">
+            <form name="subscribe" className="flex flex-col md:flex-row md:gap-2">
               <label htmlFor="email" className="sr-only">
                 Email address
               </label>
               <input
                 type="email"
+                name="email"
+                id="email"
                 className="p-2 flex-grow xl:flex-grow-0 xl:w-1/2 rounded-md border border-gray-300 outline-yellow"
                 placeholder="Enter your email"
+                autoComplete="true"
               />
               <button type="submit" className="mt-2 md:mt-0 btn-highlight__filled">
                 Subscribe

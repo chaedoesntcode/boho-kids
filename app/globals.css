@@ -52,7 +52,6 @@ p {
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
-  gap: 1rem;
 }
 
 .product-container::-webkit-scrollbar {

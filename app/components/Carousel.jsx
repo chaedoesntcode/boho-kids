@@ -27,14 +27,14 @@ const Carousel = ({ id, title, subtitle, items }) => {
 
   return (
     // START: Carousel //
-    <section id={id} className="container p-5 md:p-10">
+    <section id={id} className="container px-2 py-4 md:p-10">
       <div className="relative w-full flex flex-col align-center justify-center">
         <div className="mb-5">
           <h2 className="h2">{title}</h2>
           <p>{subtitle}</p>
         </div>
 
-        <div className="product-container mb-4 overflow-hidden">
+        <div className="ml-2 gap-2 product-container mb-4 overflow-hidden">
           {displayed.map((item, index) => {
             return (
               <div className="product-card"  key={`${id}-${index}`}>
@@ -45,7 +45,6 @@ const Carousel = ({ id, title, subtitle, items }) => {
                     key={imageIndex}
                     index={items[imageIndex]}
                     fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="absolute slider-img"
                   />
                 </div>
@@ -62,17 +61,17 @@ const Carousel = ({ id, title, subtitle, items }) => {
             );
           })}
         </div>
-        <div className="absolute w-full px-2">
+        <div className="absolute w-full px-3">
           <div className="flex justify-between">
             <button
               onClick={showPrev}
-              className="p-3 bg-white/70 rounded-full hover:bg-white/90 transition-colors"
+              className="p-3 bg-white/70 rounded-full hover:bg-white/90 transition-colors shadow-md"
             >
               <FaArrowLeft />
             </button>
             <button
               onClick={showNext}
-              className="p-3 bg-white/70 rounded-full hover:bg-white/90 transition-colors"
+              className="p-3 bg-white/70 rounded-full hover:bg-white/90 transition-colors shadow-md"
             >
               <FaArrowRight />
             </button>

@@ -37,7 +37,7 @@ const Carousel = ({ id, title, subtitle, items }) => {
         <div className="product-container mb-4 overflow-hidden">
           {displayed.map((item, index) => {
             return (
-              <div className="product-card transition-transform duration-500"  key={`${id}-${index}`}>
+              <div className="product-card"  key={`${id}-${index}`}>
                 <div className="w-full h-[300px] bg-white rounded-[12px] overflow-hidden relative">
                   <Image
                     src={item.imgURL}

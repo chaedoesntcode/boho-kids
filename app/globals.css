@@ -122,4 +122,8 @@ p {
   .countdown-item {
     @apply bg-white bg-opacity-70 text-black rounded-md px-4 py-2 text-center;
   }
+
+  .benefits-grid-item {
+    @apply p-10 text-center flex flex-col items-center;
+  }
 }

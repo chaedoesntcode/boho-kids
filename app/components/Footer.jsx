@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-darkGray py-10 bg-lightGray w-full">
+    <footer id="contact" className="bg-darkGray py-10 bg-lightGray w-full">
       <div className="px-20 py-5 md:py-10 flex flex-col lg:flex-row gap-y-10 md:gap-y-5 lg:gap-x-5">
         <div className="w-full lg:w-1/3 order-3 lg:order-1">
           <p className="h4">Shop <span className="text-brown">Boho Kids</span></p>

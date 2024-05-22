@@ -21,8 +21,8 @@ p {
 
 /* START: Hero styles */
 .hero-container {
+  height: 100%;
   position: relative;
-  height: 60vh; 
   background-image: url('/images/hero/Furniture-hero-3.jpeg');
   background-size: cover;
   background-position: center;

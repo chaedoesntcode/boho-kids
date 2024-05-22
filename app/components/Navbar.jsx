@@ -6,11 +6,12 @@ import { BiCart, BiUser, BiSearch } from "react-icons/bi";
 import Navlinks from "./Navlinks";
 
 const Navbar = () => {
+  // Setting bottom navbar to sticky on scroll
   const [isSticky, setIsSticky] = useState(false);
 
   const handleScroll = () => {
     const mobile = window.innerWidth < 768; 
-    const scrollThreshold = mobile ? 135 : 94; 
+    const scrollThreshold = mobile ? 135.156 : 93.16; 
 
     if(window.scrollY > scrollThreshold) {
       setIsSticky(true);
@@ -20,7 +21,6 @@ const Navbar = () => {
   } 
 
   useEffect(() => {
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [])
@@ -55,7 +55,7 @@ const Navbar = () => {
     </div>
       </div>
       <nav className={`w-full h-[50px] py-2 flex justify-center items-center bg-lightGray shadow-md transition-transform duration-200 ${
-          isSticky ? "fixed top-0 z-50 " : "flex "
+          isSticky ? "fixed top-0 z-50" : "flex "
         }`}>
         <Navlinks />
       </nav>

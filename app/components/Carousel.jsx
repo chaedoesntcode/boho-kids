@@ -6,6 +6,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const Carousel = ({ id, title, subtitle, items }) => {
   const [imageIndex, setImageIndex] = useState(0);
 
+  // Function to show previous image
   const showPrev = () => {
     setImageIndex(index => {
       if(index === items.length - 1) return 0
@@ -13,6 +14,7 @@ const Carousel = ({ id, title, subtitle, items }) => {
     })
   };
 
+  // Function to show next image
   const showNext = () => {
     setImageIndex(index => {
       if(index === 0) return items.length - 1
@@ -20,6 +22,7 @@ const Carousel = ({ id, title, subtitle, items }) => {
     })
   };
 
+  // Store carousel images and loop through to get image order
   const displayed = [];
   for (let i = 0; i < items.length; i++) {
     displayed.push(items[(imageIndex + i) % items.length]);

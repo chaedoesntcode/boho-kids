@@ -1,10 +1,30 @@
+'use client'
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { BiCart, BiUser, BiSearch } from "react-icons/bi";
 import Navlinks from "./Navlinks";
 
 const Navbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    const mobile = window.innerWidth < 768; 
+    const scrollThreshold = mobile ? 135 : 94; 
+
+    if(window.scrollY > scrollThreshold) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  } 
+
+  useEffect(() => {
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [])
+
   return (
     // START: Navbar //
     <header className="flex flex-col w-full">
@@ -34,7 +54,9 @@ const Navbar = () => {
       <BiCart className="nav-icon" />
     </div>
       </div>
-      <nav className="bg-lightGray flex justify-center py-2">
+      <nav className={`w-full h-[50px] py-2 flex justify-center items-center bg-lightGray shadow-md transition-transform duration-200 ${
+          isSticky ? "fixed top-0 z-50 " : "flex "
+        }`}>
         <Navlinks />
       </nav>
     </header>

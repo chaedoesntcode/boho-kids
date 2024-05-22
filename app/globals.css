@@ -65,6 +65,10 @@ p {
   border-radius: 15px;
 }
 
+.media-img {
+  margin-bottom: 1rem;
+}
+
 .slider-img,
 .media-img {
   object-fit: cover;

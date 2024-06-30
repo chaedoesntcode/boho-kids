@@ -6,7 +6,7 @@ const CountdownTimer = () => {
   useEffect(() => {
     const countdown = () => {
       // Get and calculate difference until date
-      const countDate = new Date("Jun 20, 2024 00:00:00").getTime();
+      const countDate = new Date("Jun 20, 2025 00:00:00").getTime();
       const now = new Date().getTime();
       const timeRemaining = countDate - now;
   

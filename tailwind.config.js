@@ -8,15 +8,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['var(--font-poppins)'],
-        secondary: ['var(--font-lato'],
+        primary: ["var(--font-poppins)"],
+        secondary: ["var(--font-lato"],
       },
       colors: {
-        lightGray: '#F2F2F2',
-        brown: '#735340',
-        lightBrown: '#BFA89B',
-        tan: '#D9CCC5',
-        yellow: '#DB9C4D',
+        lightGray: "#F2F2F2",
+        brown: "#735340",
+        lightBrown: "#BFA89B",
+        tan: "#D9CCC5",
+        yellow: "#DB9C4D",
       },
     },
   },

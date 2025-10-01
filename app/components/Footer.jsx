@@ -58,25 +58,21 @@ const Footer = () => {
       <div className="px-4 md:px-10 lg:px-20 py-5 flex flex-col md:flex-row gap-2 justify-between">
         <p className="small opacity-80">
           &copy; {new Date().getFullYear()} Boho Kids. All rights reserved.{" "}
-          <Link
-            target="_blank"
-            href="https://www.google.com"
-            className="underline"
-          >
+          <Link href="#" className="underline">
             Terms & Conditions
           </Link>
           &nbsp;|&nbsp;
-          <Link
-            target="_blank"
-            href="https://www.google.com"
-            className="underline"
-          >
+          <Link href="#" className="underline">
             Privacy Policy
           </Link>
         </p>
-        <p class="small opacity-80">
+        <p className="small opacity-80">
           Built by{" "}
-          <a rel="noopener" href="https://chae.dev" class="font-bold">
+          <a
+            rel="noopener noreferrer"
+            href="https://www.chae.dev"
+            className="font-bold"
+          >
             Chae
           </a>
           .

@@ -32,9 +32,9 @@ const Carousel = ({ id, title, subtitle, items }) => {
           {items.map((item, idx) => (
             <div
               key={`${id}-${idx}`}
-              className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 snap-start"
+              className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 snap-start hover:cursor-pointer group"
             >
-              <div className="w-full h-[300px] bg-gray-300 rounded-[12px] overflow-hidden relative">
+              <div className="w-full h-[300px] bg-gray-300 rounded-[12px] overflow-hidden relative group-hover:drop-shadow-md transition-all duration-300">
                 <Image
                   src={item.imgURL}
                   alt={item.brandName}
